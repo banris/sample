@@ -1,0 +1,10 @@
+---
+applications:
+ - name: tomcats
+   random-route: false 
+   path: target/GetStartedTomcat.war
+   memory: 1G
+   instances: 1
+   buildpack: java_buildpack_offline_317
+   services:
+   - session-replication
